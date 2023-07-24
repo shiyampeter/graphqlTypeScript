@@ -1,0 +1,45 @@
+{
+  "name": "node-mongo-gql",
+  "version": "2.0.0",
+  "description": "NodeJS + TypeScript + MongoDB + GraphQL Boilerplate",
+  "main": "app/server.js",
+  "repository": "git@github.com:ctrleffive/node-mongo-gql.git",
+  "author": "Chandu J S <app.coder@outlook.in>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn serve",
+    "build": "tsc",
+    "serve": "node app/server.ts",
+    "watch-node": "nodemon app/server.ts",
+    "watch-ts": "tsc -w",
+    "lint": "eslint --ext .ts . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/express": "types/express",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/eslint-plugin": "2",
+    "eslint": "6",
+    "eslint-config-standard-with-typescript": "^16.0.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-standard": "4",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^7.0.0",
+    "@types/mongoose": "^5.7.15",
+    "apollo-server-express": "^2.13.0",
+    "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "mongoose": "^5.9.12",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.0.0-rc.1"
+  }
+}
